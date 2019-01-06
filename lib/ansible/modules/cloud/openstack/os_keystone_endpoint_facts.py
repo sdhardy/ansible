@@ -12,7 +12,7 @@ ANSIBLE_METADATA = {'metadata_version': '1.1',
 DOCUMENTATION = '''
 module: os_keystone_endpoint_facts
 short_description: Retrieve facts about one or more OpenStack endpoints
-version_added: "2.7"
+version_added: "2.8"
 author: "Skyler Hardy (@sdhardy)"
 description:
     - Retrieve facts about one or more OpenStack endpoints.
