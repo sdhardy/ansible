@@ -118,9 +118,9 @@ from ansible.module_utils.openstack import openstack_full_argument_spec, opensta
 def main():
 
     argument_spec = openstack_full_argument_spec(
-        id=dict(required=False, default=None),
+        id=dict(required=False, aliases=['name'], default=None),
         filters=dict(required=False, type='dict', default=None),
-        include_services=dict(type=bool, default=None)
+        include_services=dict(type=bool)
     )
     module_kwargs = openstack_module_kwargs(
         mutually_exclusive=[
